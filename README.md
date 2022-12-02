@@ -1,2 +1,2 @@
 # POB_SLAM
-Prototype Optimization-Based SLAM.
+**P**rototype **O**ptimization-**B**ased SLAM.
