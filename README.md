@@ -1,7 +1,7 @@
 # POB_SLAM
 **P**rototype **O**ptimization-**B**ased SLAM. A pet-project.  
 
-Note: everything is computed in double terms but when it calls for visualize
+~~ Note: everything is computed in double terms but when it calls for visualize the double space is desceditized into integers ~~
 
 ### Design and pseudocode:
 - Initialize.  
