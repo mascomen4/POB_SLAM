@@ -1,0 +1,2 @@
+/usr/bin/ar qc libPOB_SLAM.a CMakeFiles/POB_SLAM.dir/src/InteractionHelper.cpp.o CMakeFiles/POB_SLAM.dir/src/Optimizer.cpp.o CMakeFiles/POB_SLAM.dir/src/Viz.cpp.o CMakeFiles/POB_SLAM.dir/src/RobotInterface.cpp.o CMakeFiles/POB_SLAM.dir/src/Control.cpp.o CMakeFiles/POB_SLAM.dir/src/Localizer.cpp.o CMakeFiles/POB_SLAM.dir/src/Sensor.cpp.o
+/usr/bin/ranlib libPOB_SLAM.a

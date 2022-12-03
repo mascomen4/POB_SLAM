@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test
+# Target rules for targets named POB_SLAM
 
 # Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
-.PHONY : test
+POB_SLAM: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 POB_SLAM
+.PHONY : POB_SLAM
 
 # fast build rule for target.
-test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-.PHONY : test/fast
+POB_SLAM/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/POB_SLAM.dir/build.make CMakeFiles/POB_SLAM.dir/build
+.PHONY : POB_SLAM/fast
 
 #=============================================================================
 # Target rules for targets named optimization_robot_localization
@@ -141,6 +141,19 @@ optimization_robot_localization: cmake_check_build_system
 optimization_robot_localization/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimization_robot_localization.dir/build.make CMakeFiles/optimization_robot_localization.dir/build
 .PHONY : optimization_robot_localization/fast
+
+#=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
+.PHONY : test
+
+# fast build rule for target.
+test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -165,6 +178,174 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimization_robot_localization.dir/build.make CMakeFiles/optimization_robot_localization.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+src/Control.o: src/Control.cpp.o
+.PHONY : src/Control.o
+
+# target to build an object file
+src/Control.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/POB_SLAM.dir/build.make CMakeFiles/POB_SLAM.dir/src/Control.cpp.o
+.PHONY : src/Control.cpp.o
+
+src/Control.i: src/Control.cpp.i
+.PHONY : src/Control.i
+
+# target to preprocess a source file
+src/Control.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/POB_SLAM.dir/build.make CMakeFiles/POB_SLAM.dir/src/Control.cpp.i
+.PHONY : src/Control.cpp.i
+
+src/Control.s: src/Control.cpp.s
+.PHONY : src/Control.s
+
+# target to generate assembly for a file
+src/Control.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/POB_SLAM.dir/build.make CMakeFiles/POB_SLAM.dir/src/Control.cpp.s
+.PHONY : src/Control.cpp.s
+
+src/InteractionHelper.o: src/InteractionHelper.cpp.o
+.PHONY : src/InteractionHelper.o
+
+# target to build an object file
+src/InteractionHelper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/POB_SLAM.dir/build.make CMakeFiles/POB_SLAM.dir/src/InteractionHelper.cpp.o
+.PHONY : src/InteractionHelper.cpp.o
+
+src/InteractionHelper.i: src/InteractionHelper.cpp.i
+.PHONY : src/InteractionHelper.i
+
+# target to preprocess a source file
+src/InteractionHelper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/POB_SLAM.dir/build.make CMakeFiles/POB_SLAM.dir/src/InteractionHelper.cpp.i
+.PHONY : src/InteractionHelper.cpp.i
+
+src/InteractionHelper.s: src/InteractionHelper.cpp.s
+.PHONY : src/InteractionHelper.s
+
+# target to generate assembly for a file
+src/InteractionHelper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/POB_SLAM.dir/build.make CMakeFiles/POB_SLAM.dir/src/InteractionHelper.cpp.s
+.PHONY : src/InteractionHelper.cpp.s
+
+src/Localizer.o: src/Localizer.cpp.o
+.PHONY : src/Localizer.o
+
+# target to build an object file
+src/Localizer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/POB_SLAM.dir/build.make CMakeFiles/POB_SLAM.dir/src/Localizer.cpp.o
+.PHONY : src/Localizer.cpp.o
+
+src/Localizer.i: src/Localizer.cpp.i
+.PHONY : src/Localizer.i
+
+# target to preprocess a source file
+src/Localizer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/POB_SLAM.dir/build.make CMakeFiles/POB_SLAM.dir/src/Localizer.cpp.i
+.PHONY : src/Localizer.cpp.i
+
+src/Localizer.s: src/Localizer.cpp.s
+.PHONY : src/Localizer.s
+
+# target to generate assembly for a file
+src/Localizer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/POB_SLAM.dir/build.make CMakeFiles/POB_SLAM.dir/src/Localizer.cpp.s
+.PHONY : src/Localizer.cpp.s
+
+src/Optimizer.o: src/Optimizer.cpp.o
+.PHONY : src/Optimizer.o
+
+# target to build an object file
+src/Optimizer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/POB_SLAM.dir/build.make CMakeFiles/POB_SLAM.dir/src/Optimizer.cpp.o
+.PHONY : src/Optimizer.cpp.o
+
+src/Optimizer.i: src/Optimizer.cpp.i
+.PHONY : src/Optimizer.i
+
+# target to preprocess a source file
+src/Optimizer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/POB_SLAM.dir/build.make CMakeFiles/POB_SLAM.dir/src/Optimizer.cpp.i
+.PHONY : src/Optimizer.cpp.i
+
+src/Optimizer.s: src/Optimizer.cpp.s
+.PHONY : src/Optimizer.s
+
+# target to generate assembly for a file
+src/Optimizer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/POB_SLAM.dir/build.make CMakeFiles/POB_SLAM.dir/src/Optimizer.cpp.s
+.PHONY : src/Optimizer.cpp.s
+
+src/RobotInterface.o: src/RobotInterface.cpp.o
+.PHONY : src/RobotInterface.o
+
+# target to build an object file
+src/RobotInterface.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/POB_SLAM.dir/build.make CMakeFiles/POB_SLAM.dir/src/RobotInterface.cpp.o
+.PHONY : src/RobotInterface.cpp.o
+
+src/RobotInterface.i: src/RobotInterface.cpp.i
+.PHONY : src/RobotInterface.i
+
+# target to preprocess a source file
+src/RobotInterface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/POB_SLAM.dir/build.make CMakeFiles/POB_SLAM.dir/src/RobotInterface.cpp.i
+.PHONY : src/RobotInterface.cpp.i
+
+src/RobotInterface.s: src/RobotInterface.cpp.s
+.PHONY : src/RobotInterface.s
+
+# target to generate assembly for a file
+src/RobotInterface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/POB_SLAM.dir/build.make CMakeFiles/POB_SLAM.dir/src/RobotInterface.cpp.s
+.PHONY : src/RobotInterface.cpp.s
+
+src/Sensor.o: src/Sensor.cpp.o
+.PHONY : src/Sensor.o
+
+# target to build an object file
+src/Sensor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/POB_SLAM.dir/build.make CMakeFiles/POB_SLAM.dir/src/Sensor.cpp.o
+.PHONY : src/Sensor.cpp.o
+
+src/Sensor.i: src/Sensor.cpp.i
+.PHONY : src/Sensor.i
+
+# target to preprocess a source file
+src/Sensor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/POB_SLAM.dir/build.make CMakeFiles/POB_SLAM.dir/src/Sensor.cpp.i
+.PHONY : src/Sensor.cpp.i
+
+src/Sensor.s: src/Sensor.cpp.s
+.PHONY : src/Sensor.s
+
+# target to generate assembly for a file
+src/Sensor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/POB_SLAM.dir/build.make CMakeFiles/POB_SLAM.dir/src/Sensor.cpp.s
+.PHONY : src/Sensor.cpp.s
+
+src/Viz.o: src/Viz.cpp.o
+.PHONY : src/Viz.o
+
+# target to build an object file
+src/Viz.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/POB_SLAM.dir/build.make CMakeFiles/POB_SLAM.dir/src/Viz.cpp.o
+.PHONY : src/Viz.cpp.o
+
+src/Viz.i: src/Viz.cpp.i
+.PHONY : src/Viz.i
+
+# target to preprocess a source file
+src/Viz.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/POB_SLAM.dir/build.make CMakeFiles/POB_SLAM.dir/src/Viz.cpp.i
+.PHONY : src/Viz.cpp.i
+
+src/Viz.s: src/Viz.cpp.s
+.PHONY : src/Viz.s
+
+# target to generate assembly for a file
+src/Viz.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/POB_SLAM.dir/build.make CMakeFiles/POB_SLAM.dir/src/Viz.cpp.s
+.PHONY : src/Viz.cpp.s
 
 test.o: test.cpp.o
 .PHONY : test.o
@@ -198,11 +379,33 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... POB_SLAM"
 	@echo "... optimization_robot_localization"
 	@echo "... test"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/Control.o"
+	@echo "... src/Control.i"
+	@echo "... src/Control.s"
+	@echo "... src/InteractionHelper.o"
+	@echo "... src/InteractionHelper.i"
+	@echo "... src/InteractionHelper.s"
+	@echo "... src/Localizer.o"
+	@echo "... src/Localizer.i"
+	@echo "... src/Localizer.s"
+	@echo "... src/Optimizer.o"
+	@echo "... src/Optimizer.i"
+	@echo "... src/Optimizer.s"
+	@echo "... src/RobotInterface.o"
+	@echo "... src/RobotInterface.i"
+	@echo "... src/RobotInterface.s"
+	@echo "... src/Sensor.o"
+	@echo "... src/Sensor.i"
+	@echo "... src/Sensor.s"
+	@echo "... src/Viz.o"
+	@echo "... src/Viz.i"
+	@echo "... src/Viz.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"

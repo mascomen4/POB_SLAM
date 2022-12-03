@@ -11,6 +11,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.20.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.20.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.20.2/CMakeSystem.cmake"
+  "/home/pi/work_drivecast/slams/thirdparty/Pangolin-master/build/PangolinConfig.cmake"
+  "/home/pi/work_drivecast/slams/thirdparty/Pangolin-master/build/PangolinConfigVersion.cmake"
+  "/home/pi/work_drivecast/slams/thirdparty/Pangolin-master/build/PangolinTargets.cmake"
   "/home/pi/work_drivecast/thirdparty/clion-2021.2.4/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCInformation.cmake"
   "/home/pi/work_drivecast/thirdparty/clion-2021.2.4/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCXXInformation.cmake"
   "/home/pi/work_drivecast/thirdparty/clion-2021.2.4/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCommonLanguageInclude.cmake"
@@ -76,6 +79,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/test.dir/DependInfo.cmake"
+  "CMakeFiles/POB_SLAM.dir/DependInfo.cmake"
   "CMakeFiles/optimization_robot_localization.dir/DependInfo.cmake"
+  "CMakeFiles/test.dir/DependInfo.cmake"
   )
