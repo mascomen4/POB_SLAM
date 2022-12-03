@@ -3,7 +3,7 @@
 
 Note: everything is computed in double terms but when it calls for visualize
 
-### Design and pseudocode
+### Design and pseudocode:
 - Initialize.  
 - Draw the 2 plot graph: true and estimated trajectory.  
 - In the loop:
