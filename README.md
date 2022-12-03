@@ -4,20 +4,20 @@
 Note: everything is computed in double terms but when it calls for visualize
 
 ### Design and pseudocode
-Initialize.
-Draw the 2 plot graph: true and estimated trajectory.
-In the loop:
-    Get command: get direction with helper, get length of movement.
-        Forward command to robot.
-    Implicitly call Localizer to localize.
-        Localizer calls sensor to get a measurement. Total of four (one for each landmark).
-            Sensor has a robust sense of the angle between orientation and vector from robot to landmark
-        Optimizer:
-            creates a new problem
-            creates 4 residuals
-            adds residuals to the problem
-            solves the problem, outputs the result and returns the result to the caller
-    Draw localized and true point
+- Initialize.  
+- Draw the 2 plot graph: true and estimated trajectory.  
+- In the loop:
+    - Get command: get direction with helper, get length of movement.  
+        - Forward command to robot.
+    - Implicitly call Localizer to localize.
+        - Localizer calls sensor to get a measurement. Total of four (one for each landmark).
+            - Sensor has a robust sense of the angle between orientation and vector from robot to landmark
+        - Optimizer:
+            - creates a new problem
+            - creates 4 residuals
+            - adds residuals to the problem
+            - solves the problem, outputs the result and returns the result to the caller
+    - Draw localized and true point
 
 ### To-do:
  - Write a Ceres optimizer for one step. From P1 -> P2. DONE
