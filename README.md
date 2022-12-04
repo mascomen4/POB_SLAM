@@ -29,4 +29,4 @@
  - Write a Pangolin based visualizer ? 
 
 ## Sensor covariances during optimization
-[understanding_covariance_and_sensor_noises](docs/understanding_covariance_and_sensor_noises.png)
+![understanding_covariance_and_sensor_noises](docs/understanding_covariance_and_sensor_noises.png)
