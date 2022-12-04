@@ -27,3 +27,6 @@
      - Causing to call the optimizer on each command.
  - ~~Write a text based visualizer of robot moving in a 2D plane~~ 
  - Write a Pangolin based visualizer ? 
+
+## Sensor covariances during optimization
+[understanding_covariance_and_sensor_noises](docs/understanding_covariance_and_sensor_noises.png)
